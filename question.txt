@@ -1,0 +1,42 @@
+what is event loop ?
+
+when we run javascript code , it goes through a cycle include call stack ,web API's ,callback Queue and event loop
+first call stack is like a to do list ,it keeps track of what functions are running and what need to be done 
+
+
+now the second step , when there's something async like setTimeOut or any api.it goes through web APi's.there are like
+separate workers that handle the heavy lifting ,leaving the main thread free.
+
+The result or callback queue from the web API's is pushed into the callback queue . so, when the call stack is empty
+the event loop check the call back queue and moves things back into the call stack for execution 
+
+in other word we can say that call stack keeps track , web API's do the hard work, callback queue waits and 
+event loop make sure everything happens at the right time.
+
+=================================
+callback : A callback in javascript is a function that is passed as an argument to another function and is excuted 
+after the completion of some asynchronus operation.it helps in handling asynchrous task
+=================================
+
+callback hell : 
+
+it is also called as pyramid of doom, that occurs when we are nesting the callbacks within each other 
+======================
+promsie: so promises were introduced to handle the asynchrnous operation more effectively and avoid callback hell.
+A promise represents the eventual completion , or failure of asynchrous operation  
+
+
+Promise Changing :it is also called promisfication , it is the process which converting a callback based api to promise based api . it involves wrapping a function that uses a callBacks into the function that returns a promise.
+it is more easier to work with asynchronious code 
+
+=======================================
+
+Interviewer: "Can you explain what a generator function is and where you've used it before?"
+
+You: "Absolutely! A generator function in JavaScript is a special type of function that can be paused and resumed. It's defined using an asterisk (*) after the function keyword. I've used generator functions in scenarios where I needed to work with sequences of values, especially for lazy evaluation.
+
+One particular use case was when dealing with large datasets or paginated API responses. Instead of loading all the data at once, which could be inefficient, I used a generator to fetch and process data in chunks, only when needed. This way, it helped in optimizing memory usage and improving overall performance.
+
+=========================================
+
+Higher Order Component (HOC) is a function that takes a component and returns a new component with some enhanced functionality. It's like a wrapper for components.
