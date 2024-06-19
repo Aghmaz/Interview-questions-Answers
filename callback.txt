@@ -1,0 +1,58 @@
+callback : A callback in javascript is a function that is passed as an argument to another function
+and is excuted after the completion of some asynchronus operation.
+it helps in handling asynchrous task
+=================================
+
+callback hell : 
+
+it is also called as pyramid of DOM, that occurs when we are nesting the callbacks 
+within each others 
+
+==================================
+
+const mainFunction = (callback) =>{
+setTimeOut(()=>{
+    let data = "Server data"
+    callback(data)
+},2000)
+}
+
+const processData = (data)=>{
+    console.log(data)
+}
+
+mainFunction(processData)
+
+===================================
+
+const firstFucntion = ()=>{
+    setTimeOut(()=>{
+    let data = "Server data"
+    callback(data)
+},2000)
+}
+
+const secondFucntion = ()=>{
+    setTimeOut(()=>{
+    let data = "Server data 2"
+    callback(data)
+},2000)
+}
+
+const thirdFucntion = ()=>{
+    setTimeOut(()=>{
+    let data = "Server data 3"
+    callback(data)
+},2000)
+}
+
+
+firstFucntion(()=>{
+  console.log(data)  
+    secondFucntion(()=>{
+       console.log(data)  
+      thirdFucntion(()=>{
+          console.log(data)  
+        })
+    })
+})

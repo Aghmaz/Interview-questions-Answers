@@ -1,0 +1,37 @@
+variables are the containers that can hold the data.
+
+we can store data into three types of variables 
+one is var , second is let and rest one is const 
+
+now lets discuss how can we use these variables 
+
+first of all we have var , we can re-initialize and can change its value many time 
+
+but in let case , we can change its value but we cannot use let keyword for the next time 
+
+
+for const , we cannot change its value 
+
+
+var has a global scope 
+and let and const are the block scope
+
+
+Example :
+
+var a = 23
+var a = 25 
+a = 29 
+
+console.log(a)
+output : 29 
+
+
+let  b = 23 
+b = 25 
+console.log(b)
+output : 25
+
+const c = 24
+console.log(c)
+output : 24

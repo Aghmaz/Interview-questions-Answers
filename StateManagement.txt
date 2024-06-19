@@ -1,0 +1,73 @@
+we have two three approaches to manage the states
+
+one is useState hook , second one is The Context API in React provides a way 
+to pass data through the component tree without having to pass props down manually
+at every level.its good for small data set.and it is used 
+for small or medium size application
+
+another one approach is redux toolkit and we can use it for data centralization 
+its uses for large or medium size applicaiton
+
+
+Example:
+
+import React ,{useState} from "react"
+
+const [data, setData] = useState("")
+
+==========================
+
+context API :
+
+we need to follow three steps:
+
+1.create a context
+2.wrapping our application with context provider
+3.use context provider states 
+
+=============================
+import React {useState,createContext} from "react"
+
+export const myContext = createContext();
+
+export const myProvider = ({children}) =>{
+    const [data,setData]=useState(1)
+
+return (
+    
+    <myContext.Provider   value={{data,setData}}>
+    {children}
+    </myContext.Provider>
+
+)}
+
+==============================
+import React ,{useContext} from "react"
+import {myContext} from "./myContext
+
+export const whereYouWantToUse = ()=>{
+const {data,setDate} =useContext(myContext)
+return(
+<>
+<p> {data} </p>
+
+<input type="text" onChange={(e)=>setData(e.targe.value)}
+value={data}
+/>
+
+</>)}
+
+===============================
+
+wrapping the applicaiton 
+
+import React from "react"
+import ReactDom form "react-dom"
+import App from "./App"
+import myContext from "./myContext
+ReactDom.render(
+<myContext.Provider>
+<App/>
+</myContext.Provider>, document.getElementById("root")
+
+)

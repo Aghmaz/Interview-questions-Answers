@@ -20,13 +20,14 @@ after the completion of some asynchronus operation.it helps in handling asynchro
 
 callback hell : 
 
-it is also called as pyramid of doom, that occurs when we are nesting the callbacks within each other 
+it is also called as pyramid of DOM, that occurs when we are nesting the callbacks within each others 
 ======================
 promsie: so promises were introduced to handle the asynchrnous operation more effectively and avoid callback hell.
 A promise represents the eventual completion , or failure of asynchrous operation  
 
 
-Promise Changing :it is also called promisfication , it is the process which converting a callback based api to promise based api . it involves wrapping a function that uses a callBacks into the function that returns a promise.
+Promise Changing :it is also called promisfication , it is the process which converting a callback based api to promise based api . 
+it involves wrapping a function that uses a callBacks into the function that returns a promise.
 it is more easier to work with asynchronious code 
 
 =======================================

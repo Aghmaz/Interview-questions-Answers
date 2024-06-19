@@ -1,0 +1,4 @@
+virtual dom is the light weight copy of real dom ,
+in react has a diffing algorithm that is responsible for monitoring the 
+changes of previous virtual dom and updated virtual dom and after comparision 
+it will change that specific part of the real dom ,so thats why it speed is so fast.
