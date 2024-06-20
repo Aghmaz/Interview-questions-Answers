@@ -1,0 +1,48 @@
+Two Types of Data Structure ?
+1.linear  (Array , Linked-list , stack ,Queue)
+2.Non-linear (Tree , graph)
+
+linear (elements are stored sequentially and mostly they are single level)
+non-linear ( elements are store not in sequences and they are multi level, travsal are difficult)
+
+An algorithm is a set of instructions to perform a specific task or solve a problem
+A good algorithm should run fast and take less memory 
+find the average of three numbers ?
+find the natural numbers ?
+
+
+usually check two things 
+amount of time taken by algorithm to run is called time complexity
+amount of memory taken by algorithm to run that is called space complexity
+
+
+asymptotic analysis:it helps in evaluating performance of algorithm in terms of input size and
+its increases
+using asymptotic analysis we don't measure actual running time of algorithm
+it helps in determining how time  and space taken by algorithm increases with input size
+
+asymptotic notation : are the mathematical tools used to describe the running time of an algorithm 
+in term input size
+
+example : Performance of a car in 1 litre of petrol
+
+highway (min traffic) 25km / litre
+city (max traffic) 15km/litre
+city+highway (avg traffic) 20km/litre
+
+asymptotic notations help us in determing
+1.best case
+2.average case
+3. worest case
+
+types of asymptotic notation 
+there are three types of notations for performing runtime analysis of an algorithm
+
+1. omega notation (best case) (it is the formal way to express the lower bound of an algorithm's running time
+lower bound means for any given input this notation determines best amount of time an algorithm can take to complete )
+2. Big o notation (worest case )( upper bound of an algorithm running time , 
+upper bound means for any given input this notation determines longest amount of time an algorithm can take to complete)
+3. theta notation (average case) (both upper and lower bound of an algorithm running time
+by lower and upper bound means for any given input this notation determines average amount of time an algorithm can take to complete)
+
+

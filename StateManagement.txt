@@ -8,6 +8,20 @@ for small or medium size application
 another one approach is redux toolkit and we can use it for data centralization 
 its uses for large or medium size applicaiton
 
+when to use Context api 
+
+when you want to add theme modes like dark theme or light theme 
+user authentication 
+language or localization (manage the language and current setting)
+configuation setting (storing and sharing global setting or configuation)
+
+
+when to use redux toolkit 
+complex state management , for example you want to use middleware ,multiple slices of
+state , 
+
+large application : you have many features 
+=================================
 
 Example:
 
