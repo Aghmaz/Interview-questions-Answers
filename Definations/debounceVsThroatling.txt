@@ -1,0 +1,11 @@
+debounce :
+
+when user try to search something and after some delay we want some api call 
+we use debounce , with the help of setTimeOut and clearTimeOut
+
+it helps us to avoid unnecessary api calls 
+
+and throtling is little different ,
+
+
+when our scroll down 50% or 70% we called a api of new data , 

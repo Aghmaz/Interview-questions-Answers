@@ -1,0 +1,4 @@
+it loades a single html page and dynamically updates html page when user interact with the app 
+with reloading the page.
+
+so it is kind of reconcilation.

@@ -46,3 +46,6 @@ upper bound means for any given input this notation determines longest amount of
 by lower and upper bound means for any given input this notation determines average amount of time an algorithm can take to complete)
 
 
+big o notation is mostly used notation in time and space complexity
+
+Big O (O) Notation :
